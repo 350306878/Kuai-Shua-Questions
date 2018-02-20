@@ -6,6 +6,7 @@
 <img src="http://bmob-cdn-16714.b0.upaiyun.com/2018/02/20/0de0e53e40548dd88011730550942202.jpg" height="300" width="300" >
 </div>
 
+项目部分截图如下：
 
 <div align="center">
 <img src="https://www.bmob.cn/uploads/attached/img/20171228/5a449a8b5dd7b.png" height="500" width="270" >

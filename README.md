@@ -3,7 +3,7 @@
 
 项目体验地址如下（微信扫码）：
 <div align="center">
-<img src="http://bmob-cdn-16714.b0.upaiyun.com/2018/02/20/0de0e53e40548dd88011730550942202.jpg" height="500" width="270" >
+<img src="http://bmob-cdn-16714.b0.upaiyun.com/2018/02/20/0de0e53e40548dd88011730550942202.jpg" height="300" width="300" >
 </div>
 
 

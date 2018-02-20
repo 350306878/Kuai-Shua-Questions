@@ -1,0 +1,17 @@
+<view class="page">
+  <image class='image' src='../../images/图-01.png'></image>
+
+  <view class='tip'>共70道题，还有32道未做答</view>
+
+  <view class='bottom'>
+    <view class='left'>
+      <view class='leftText'>查看答题卡</view>
+    </view>
+    <view class='right'>
+      <view class='rightText'>交卷</view>
+    </view>
+  </view>
+
+  
+
+</view>

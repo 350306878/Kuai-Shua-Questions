@@ -1,0 +1,64 @@
+page{
+     height: 100%;
+ }
+.page{
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+    height: 100%;
+    background: #ffffff;
+}
+
+
+.headName{
+  margin: 48rpx 0rpx 48rpx 32rpx;
+  display:flex;
+  align-items:center;
+  text-align: center;
+}
+
+.head{
+  float: left;
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.name{
+  font-size: 35rpx;
+  margin-left: 24rpx;
+  float: left;
+}
+
+.grayLine{
+  height: 10rpx;
+  width: 100%;
+  background-color: #e1e3e3;
+}
+
+.testHistory,.personalInformation{
+  margin: 28rpx 0rpx 28rpx 32rpx;
+  display:flex;
+  align-items:center;
+  text-align: center;
+}
+
+.icon{
+  width: 63rpx;
+  height: 63rpx;
+}
+
+.text{
+  color: #717171;
+  font-size: 30rpx;
+  margin-left: 16rpx;
+}
+
+.grayLine1{
+  height: 1px;
+  width: 100%;
+  background-color: #e1e3e3;
+}
+
+.grayLine2{
+  height: 10rpx;
+  width: 100%;
+  background-color: #e1e3e3;
+}

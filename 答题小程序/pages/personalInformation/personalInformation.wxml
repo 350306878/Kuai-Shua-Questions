@@ -1,0 +1,31 @@
+<view class="page">
+  <view class='headName'>
+    <image class='head' src='{{userInfo.avatarUrl}}'></image>
+    <view class='name'>{{userInfo.nickName}}</view>
+  </view>
+
+  <view class='grayLine'></view>
+
+  <view class='testHistory'>
+    <view class='text'>姓名：</view>
+    <view class='text' style='color:#343535;'>{{realName}}</view>
+  </view>
+
+
+  <view class='grayLine2'></view>
+
+  <view class='testHistory'>
+    <view class='text'>学校：</view>
+    <view class='text' style='color:#343535;'>{{university}}</view>
+  </view>
+
+  <view class='grayLine2'></view>
+
+  <view class='personalInformation'>
+    <view class='text'>手机号:</view>
+    <view class='text' style='color:#343535;'>{{telephone}}</view>
+  </view>
+
+  <view class='grayLine2'></view>
+
+</view>

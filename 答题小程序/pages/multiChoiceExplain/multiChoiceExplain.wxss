@@ -1,0 +1,101 @@
+page{
+     height: 100%;
+ }
+.page{
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+    height: 100%;
+    background: #ffffff;
+}
+
+.all{
+  padding-left: 30rpx;
+  padding-top: 230rpx;
+}
+.title{
+  font-size: 38rpx;
+}
+
+.content{
+  font-size: 30rpx;
+  color: #595758;
+  margin: 30rpx 20rpx 0rpx 30rpx;
+}
+
+.startAnswer{
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -125rpx;
+  font-size: 30rpx;
+  background-color: #1bd0bd;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  color: #ffffff;
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+.handIcon{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* .bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #c9c9d8;
+}
+
+.left{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.right{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  float: right;
+  width: 50%;
+  height: 100%;
+} */
+
+.leftIcon{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+/* .rightIcon{
+  width: 75rpx;
+  height: 75rpx;
+} */
+
+ .bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #c9c9d8;
+text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+} 
+.middle{
+  margin: 0 auto;
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}

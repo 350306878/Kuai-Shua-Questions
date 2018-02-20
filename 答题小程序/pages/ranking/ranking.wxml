@@ -1,0 +1,101 @@
+<view class="page">
+    <view  class="choseReason" >
+      <view class="reasonItem"  wx:for="{{QBList}}" data-index="{{index}}" bindtap="choseQB" style="{{index==id?'background-color: #1bd0bd;color:#fff':' background-color: #efefef;' }}">
+        <view  bindtap="falseInformation">{{item}}</view>
+      </view>
+    </view>
+ 
+
+     <view class="loading_box" wx:if="{{loading}}">
+      <view class="loading3 loading3_1"></view>
+      <view class="loading3 loading3_2"></view>
+      <view class="loading3 loading3_3"></view>
+    </view>
+ 
+    <view class='ranking' wx:for="{{ranking_list}}">
+
+      <view class="item1"  wx:if="{{index==0}}">
+        <image class='xueBaIcon' src='../../images/C_16.png'></image>
+        <view class='left'>
+          <view class='left_left1'>
+            {{item.number}}
+          </view>
+
+          <view class='left_right'>
+             <image class="userPhoto"    src="{{item.userPic}}" />
+          </view>
+      
+        </view>
+        <view class='middle'>
+          <view class='middle_top'>
+            {{item.realName}}
+          </view>
+          <view class='middle_bottom'>
+            {{item.university}}
+          </view> 
+        </view>
+        <view class='right'>
+          <view class='score'>
+            {{item.score}}
+          </view>
+          <view class='like'>
+            <view class='likeTop'>
+              {{item.likeNumber}}
+            </view>
+            <view class='likeBottom'>
+              <image class='likeIcon' src='../../images/heartClick.png' wx:if="{{ranking_list[index].hadLike}}"></image>
+              <image class='likeIcon' src='../../images/heart.png' wx:if="{{!ranking_list[index].hadLike}}" bindtap='like' data-index="{{index}}"></image>
+            </view>
+          </view>
+           
+        </view>
+      </view>
+
+
+      <view class="item2"  wx:if="{{index!=0}}">
+        <view class='left'>
+          <view class='left_left2'>
+            {{item.number}}
+          </view>
+
+          <view class='left_right'>
+             <image class="userPhoto"    src="{{item.userPic}}" />
+          </view>
+      
+        </view>
+        <view class='middle'>
+          <view class='middle_top'>
+            {{item.realName}}
+          </view>
+          <view class='middle_bottom'>
+            {{item.university}}
+          </view> 
+        </view>
+        <view class='right'>
+          <view class='score'>
+            {{item.score}}
+          </view>
+          <view class='like'>
+            <view class='likeTop'>
+              {{item.likeNumber}}
+            </view>
+            <view class='likeBottom'>
+              <image class='likeIcon' src='../../images/heartClick.png' wx:if="{{ranking_list[index].hadLike}}"></image>
+              <image class='likeIcon' src='../../images/heart.png' wx:if="{{!ranking_list[index].hadLike}}" bindtap='like' data-index="{{index}}"></image>
+            </view>
+          </view>
+           
+        </view>
+      </view>
+    </view>
+
+    <view class="loading_box_bottom" wx:if="{{has_more}}">
+      <view class="loading3_bottom loading3_1_bottom"></view>
+      <view class="loading3_bottom loading3_2_bottom"></view>
+      <view class="loading3_bottom loading3_3_bottom"></view>
+    </view>
+
+    
+
+   
+</view>

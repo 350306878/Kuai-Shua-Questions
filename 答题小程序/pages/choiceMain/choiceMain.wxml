@@ -1,0 +1,26 @@
+<view class="page"  >
+  <view class='choiceIcon'>
+    <image class='image' src='../../images/8-01.png'></image>
+    <view class='imageText'>选择题库</view>
+  </view>
+
+  <!-- <view class='choseQuestion'> -->
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view  class='choseQuestion' >
+        {{choseQuestionBank}}
+      </view>
+    </picker>
+  <!-- </view> -->
+
+  <view class='startAnswer' bindtap='chose'>
+    确认选择
+  </view> 
+</view>
+
+   <view class="loading_box" wx:if="{{loading}}">
+      <view class="loading3 loading3_1"></view>
+      <view class="loading3 loading3_2"></view>
+      <view class="loading3 loading3_3"></view>
+    </view>  
+
+

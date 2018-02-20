@@ -1,0 +1,56 @@
+<view class="page">
+  <view class='title'> 
+      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
+      <text>单项选择题</text>
+  </view>
+
+   <view class="loading_box" wx:if="{{loading}}">
+      <view class="loading3 loading3_1"></view>
+      <view class="loading3 loading3_2"></view>
+      <view class="loading3 loading3_3"></view>
+    </view>
+  
+ 
+  <view class='singleChoice' wx:for="{{singleQuestionList}}">
+    <view class='singleChoiceItemCorrect' wx:if="{{item.answerResult=='correct'}}">{{item.number}}</view>
+    <view class='singleChoiceItemError' wx:if="{{item.answerResult=='error'}}">{{item.number}}</view>
+    <view class='singleChoiceItemBlank' wx:if="{{item.answerResult==null||item.answerResult=='blank'}}">{{item.number}}</view>
+  </view>
+
+  <view style='height:20rpx;  clear: both;'></view>
+
+  <view class='title'>
+      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
+      <text>多项选择题</text>
+  </view> 
+
+  <!-- <view wx:if="{{noMulti==true}}">
+    <view class='multiChoice' wx:for="{{singleQuestionList}}">
+        <view class='singleChoiceItemBlank' >{{item.number}}</view>
+    </view>
+  </view> -->
+
+  <!-- <view wx:if="{{noMulti==false}}"> -->
+    <view class='multiChoice' wx:for="{{multiQuestionList}}">
+      <view class='singleChoiceItemCorrect' wx:if="{{item.answerResult=='correct'}}">{{item.number}}</view>
+      <view class='singleChoiceItemError' wx:if="{{item.answerResult=='error'}}">{{item.number}}</view>
+      <view class='singleChoiceItemBlank' wx:if="{{item.answerResult==null||item.answerResult=='blank'}}">{{item.number}}</view>
+    </view>
+  <!-- </view> -->
+
+
+
+   <view style='height:150rpx;  clear: both;'></view>
+
+
+  <view class='bottom'>
+    <view class='left'>
+      <view class='leftText' bindtap='continueAnswer'>继续答题</view>
+    </view>
+    <view class='right'>
+      <view class='rightText' bindtap='assignment'>交卷</view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,36 @@
+<view class="page">
+
+  <view class='all'>
+    <view class='title'>
+      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
+      <text>多项选择题</text>
+    </view>
+    <view class='content'>
+      <text>本大题共20小题，每小题2分，共40分。每小题均有2个以上正确答案，请从每题的备选答案中选出一个你认为正确的答案。</text>
+    </view>
+  </view>
+
+
+  <view class='startAnswer' bindtap='action'>
+    <image class='handIcon' src='../../images/hand.png' ></image>
+    开始答题
+  </view>
+
+  <!-- <view class='bottom'>
+    <view class='left'>
+      <image class='leftIcon' src='../../images/1-01.png' bindtap='answerCard'></image>
+    </view>
+    <view class='right'>
+      <image class='rightIcon' src='../../images/1-02.png'></image>
+    </view>
+  </view> -->
+
+   <view class='bottom'>
+    <view class='middle' bindtap='answerCard'>
+      <image class='leftIcon' src='../../images/1-01.png'></image>
+    </view>
+   </view>
+  
+
+
+</view>

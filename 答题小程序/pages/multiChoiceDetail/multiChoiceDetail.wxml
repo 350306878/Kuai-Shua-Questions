@@ -1,0 +1,71 @@
+<view class="page"> 
+  <view class='top'>
+    <view class='topLeft'><text style='margin-left:20rpx;'>多项选择</text></view>
+    <view class='topRight'>
+      <view class='topRightContent'>
+        <text style='color:#1bd0bd;font-size:50rpx; font-style:italic;margin-right:10rpx;'>{{nowQuestionNumber+1}}</text><text> / 20</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='questionTitle'>
+       {{nowQuestion.title}}
+  </view>
+
+  <view class='questionOption'>
+    <view class='item'>
+      <view class='characterNotChose' bindtap='choseA' wx:if="{{choseA==false}}">A</view>
+      <view class='characterChose' bindtap='notChoseA' wx:if="{{choseA==true}}">A</view>
+      <view class='option'>{{nowQuestion.options[0]}}</view>
+    </view>
+    <view class='item'>
+      <view class='characterNotChose' bindtap='choseB' wx:if="{{choseB==false}}">B</view>
+      <view class='characterChose' bindtap='notChoseB' wx:if="{{choseB==true}}">B</view>
+      <view class='option'>{{nowQuestion.options[1]}}</view>
+    </view>
+    <view class='item'>
+      <view class='characterNotChose' bindtap='choseC' wx:if="{{choseC==false}}">C</view>
+      <view class='characterChose' bindtap='notChoseC' wx:if="{{choseC==true}}">C</view>
+      <view class='option'>{{nowQuestion.options[2]}}</view>
+    </view>
+    <view class='item'>
+      <view class='characterNotChose' bindtap='choseD' wx:if="{{choseD==false}}">D</view>
+      <view class='characterChose' bindtap='notChoseD' wx:if="{{choseD==true}}">D</view>
+      <view class='option'>{{nowQuestion.options[3]}}</view>
+    </view>
+  </view>
+
+  <!-- <view class='frontQuestion' wx:if="{{nowQuestionNumber!=0}}"  bindtap='frontQuestion'>←</view> -->
+
+  <!-- <view class='lastQuestion' wx:if="{{nowQuestionNumber!=19}}"  bindtap='afterQuestion'>→</view> -->
+
+  <!-- <view class='bottom'>
+    <view class='left' bindtap='answerCard'>
+      <image class='leftIcon' src='../../images/1-01.png'></image>
+    </view>
+    <view class='right'>
+      <image class='rightIcon' src='../../images/1-02.png'></image>
+    </view>
+  </view> -->
+
+  <view class='bottom'>
+    <view class='middle' bindtap='answerCard'>
+      <image class='leftIcon' src='../../images/1-01.png'></image>
+    </view>
+   </view>
+
+  <view class='blankView'></view>
+
+ <view class='submit' bindtap='submit' wx:if="{{nowQuestionNumber==19}}">
+    <image class='handIcon' src='../../images/hand.png' ></image>
+    交卷
+  </view>
+
+  <view class='submit' bindtap='afterQuestion' wx:if="{{nowQuestionNumber!=19}}">
+    <image class='handIcon' src='../../images/hand.png' ></image>
+    下一题
+  </view>
+
+
+</view>

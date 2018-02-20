@@ -1,0 +1,146 @@
+@import "../../style/loading.wxss";
+
+page{
+     height: 100%;
+ }
+.page{
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+    height: 100%;
+    background: #ffffff;
+}
+
+.title{
+  clear: both;
+  font-size: 35rpx;
+  margin: 30rpx 0rpx 0rpx 20rpx;
+}
+
+.singleChoice{
+  width: 100%;
+  margin: 30rpx 20rpx 0rpx 30rpx;
+}
+
+.singleChoiceItemCorrect{
+  float: left;
+  margin: 0rpx 50rpx 30rpx 0rpx;
+  width: 25px;
+  height: 25px;
+  background-color: #1bd0bd;
+  color: white;
+  text-align: center;
+  border-radius: 100px;
+  border:1px #1bd0bd solid;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+.singleChoiceItemError{
+  float: left;
+  margin: 0rpx 50rpx 30rpx 0rpx;
+  width: 25px;
+  height: 25px;
+  background-color: #f2403c;
+  color: white;
+  text-align: center;
+  border-radius: 100px;
+  border:1px #f2403c solid;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+.singleChoiceItemBlank{
+  float: left;
+  margin: 0rpx 50rpx 30rpx 0rpx;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: #1bd0bd;
+  text-align: center;
+  border-radius: 100px;
+  border:1px #1bd0bd solid;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+
+.multiChoice{
+   width: 100%;
+  margin: 30rpx 20rpx 0rpx 30rpx;
+}
+
+
+.multiChoiceItem{
+  float: left;
+  margin: 0rpx 50rpx 30rpx 0rpx;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: #1bd0bd;
+  text-align: center;
+  border-radius: 100px;
+  border:1px #1bd0bd solid;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+
+.bottom{
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #c9c9d8;
+}
+
+.left{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.right{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.leftText{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  font-size: 30rpx;
+  color: #ffffff;
+  width: 240rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  background-color: #1bd0bd;
+}
+
+.rightText{
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  font-size: 30rpx;
+  color: #ffffff;
+  width: 240rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  background-color: #1bd0bd;
+}
+
+

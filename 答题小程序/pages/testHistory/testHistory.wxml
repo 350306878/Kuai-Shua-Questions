@@ -1,0 +1,8 @@
+<view class="page">
+
+  <view class='item' wx:for="{{historyQuestionBank}}" bindtap='showDetail' data-index="{{index}}">
+    <view class='itemName'>{{item.choseQuestionBank}}</view>
+    <view class='peopleNumber'>99+人做过</view>
+  </view>
+
+</view>

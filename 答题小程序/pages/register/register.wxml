@@ -1,0 +1,26 @@
+<view class="page">
+  <view style='text-align: center;justify-content:center;display:flex;align-items:center;margin:40rpx 0rpx 70rpx 0rpx;'>
+    <image class='image' src='../../images/8-01.png'></image>
+  </view>
+
+    <form bindsubmit="registerSuccess">
+      <view class='text'>输入您的真实姓名</view>
+      <view class="inputFrame">
+        <input placeholder="姓名" name="realName" placeholder-style='font-size:35rpx;'/>
+      </view>
+
+      <view class='text'>输入您学校的名称</view>
+      <view class="inputFrame">
+        <input placeholder="学校" name="university" placeholder-style='font-size:35rpx;'/>
+      </view>
+
+      <view class='text'>输入您的手机号</view>
+      <view class="inputFrame">
+        <input  type="number" placeholder="手机号" name="telephone" placeholder-style='font-size:35rpx;'/>
+      </view>
+
+      <button class='ensure'  formType="submit" >确定</button>
+
+      <view class='tip'>一经确认不可修改</view>
+    </form>
+</view>

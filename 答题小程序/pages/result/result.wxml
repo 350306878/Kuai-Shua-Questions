@@ -1,0 +1,71 @@
+<view class="page">
+   <view class="loading_box" wx:if="{{loading}}">
+      <view class="loading3 loading3_1"></view>
+      <view class="loading3 loading3_2"></view>
+      <view class="loading3 loading3_3"></view>
+    </view>
+  <view class='grade'><text style='font-size:87rpx;'>{{score}}</text> /60分</view>
+
+   <view class='dataAnalysis'>
+    <view class='dataAnalysisLeft'>
+      <view class='content'>
+        <view class='dataAnalysisText'>已击败考生</view>
+        <view class='dataAnalysisNumber'>{{defeatNumber}}人</view>
+      </view>
+    </view>
+    <view class='dataAnalysisMiddle'>
+      <view class='content'>
+        <view class='dataAnalysisText'>全站平均分</view>
+        <view class='dataAnalysisNumber'>{{averageScore}}分</view>
+      </view>
+    </view>
+    <view class='dataAnalysisRight'>
+      <view class='content'>
+        <view class='dataAnalysisText'>得分率</view>
+        <view class='dataAnalysisNumber'>{{correctRate}}%</view>
+      </view>
+    </view>
+  </view> 
+
+  <view class='grayLine'></view>
+
+<view class='title'> 
+      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
+      <text>单项选择题</text>
+  </view>
+ 
+  <view class='singleChoice' wx:for="{{singleQuestionList}}" data-index="{{index}}" data-chosetype="single" bindtap="showDetail">
+    <view class='singleChoiceItemCorrect' wx:if="{{item.answerResult=='correct'}}">{{item.number}}</view>
+    <view class='singleChoiceItemError' wx:if="{{item.answerResult=='error'}}">{{item.number}}</view>
+    <view class='singleChoiceItemBlank' wx:if="{{item.answerResult==null||item.answerResult=='blank'}}">{{item.number}}</view>
+  </view>
+
+  <view style='height:20rpx;  clear: both;'></view>
+
+  <view class='title'>
+      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
+      <text>多项选择题</text>
+  </view>
+
+
+    <view class='multiChoice' wx:for="{{multiQuestionList}}"  data-index="{{index}}" data-chosetype="multi" bindtap="showDetail">
+      <view class='singleChoiceItemCorrect' wx:if="{{item.answerResult=='correct'}}">{{item.number}}</view>
+      <view class='singleChoiceItemError' wx:if="{{item.answerResult=='error'}}">{{item.number}}</view>
+      <view class='singleChoiceItemBlank' wx:if="{{item.answerResult==null||item.answerResult=='blank'}}">{{item.number}}</view>
+    </view>
+
+
+  <view style='clear: both;'></view>
+
+   <view style='height:150rpx;  clear: both;'></view>
+
+  <view class='bottom'>
+    <view class='left'>
+      <view class='leftText' bindtap='allAnalysis'>查看全部解析</view>
+    </view>
+    <view class='right'>
+      <view class='rightText' bindtap='returnMainPage'>返回首页</view>
+    </view>
+  </view>
+
+</view>

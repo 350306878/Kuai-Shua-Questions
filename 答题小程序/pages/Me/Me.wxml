@@ -1,0 +1,29 @@
+<view class="page">
+  <view class='headName'>
+    <image class='head' src='{{userInfo.avatarUrl}}'></image>
+    <view class='name'>{{userInfo.nickName}}</view>
+  </view>
+
+  <view class='grayLine'></view>
+
+  <view class='testHistory' bindtap='testHistory'>
+    <image class='icon' src='../../images/1-01.png'></image>
+    <view class='text'>测试历史</view>
+  </view>
+
+  <view class='grayLine1'></view>
+
+  <view class='personalInformation' bindtap='personalInformation'>
+    <image class='icon'  src='../../images/1-02.png'></image>
+    <view class='text'>个人信息</view>
+  </view>
+
+  <view class='grayLine2'></view>
+
+  <view class='personalInformation' bindtap='questionBack'>
+    <image class='icon'  src='../../images/1-03.png'></image>
+    <view class='text'>问题反馈</view>
+  </view>
+
+
+</view>

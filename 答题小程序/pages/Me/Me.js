@@ -32,18 +32,10 @@ Page({
     var User = Bmob.Object.extend("_User");
     var queryUser = new Bmob.Query(User);
     queryUser.get(currentUserId, {
-      success: function (result) {
-        var register = result.get("register");
-        if (register==false){
-          wx.navigateTo({
-            url: '../register/register'
-          })
-        }
-        else{
+      success: function (result) {       
           wx.navigateTo({
             url: '../testHistory/testHistory'
-          })
-        }
+          })        
       },
       error: function (object, error) {
         // 查询失败
@@ -57,17 +49,9 @@ Page({
     var queryUser = new Bmob.Query(User);
     queryUser.get(currentUserId, {
       success: function (result) {
-        var register = result.get("register");
-        if (register == false) {
-          wx.navigateTo({
-            url: '../register/register'
-          })
-        }
-        else {
-          wx.navigateTo({
+                 wx.navigateTo({
             url: '../personalInformation/personalInformation'
-          })
-        }
+          })        
       },
       error: function (object, error) {
         // 查询失败

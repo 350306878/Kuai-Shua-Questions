@@ -30,23 +30,14 @@ Page({
     var loadQuestionBank;
     var questionList=new Array();
     var multiQuestionList = new Array();
-    if (choseQuestionBank =="大学计算机期末考试题库"){
-      loadQuestionBank="QB1";
+    if (choseQuestionBank =="区块链测试题初级"){
+      loadQuestionBank="BCLevel1";
     }
-    else if (choseQuestionBank == "计算机二级office题库"){
+    else if (choseQuestionBank == "区块链测试题中级"){
       loadQuestionBank = "QB2";
     }
-    else if (choseQuestionBank == "毛概期末考试题库") {
+    else if (choseQuestionBank == "区块链测试题高级") {
       loadQuestionBank = "QB3";
-    }
-    else if (choseQuestionBank == "中国近代史期末考试题库") {
-      loadQuestionBank = "QB4";
-    }
-    else if (choseQuestionBank == "马克思原理期末考试题库") {
-      loadQuestionBank = "QB5";
-    }
-    else if (choseQuestionBank == "形式与政策") {
-      loadQuestionBank = "QB6";
     }
     var QuestionBank = Bmob.Object.extend(loadQuestionBank);
     var querySingleQuestionBank = new Bmob.Query(QuestionBank);

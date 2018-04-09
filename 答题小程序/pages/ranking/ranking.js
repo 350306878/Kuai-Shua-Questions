@@ -4,8 +4,8 @@ Page({
 
  
   data: {
-    QBList: ['大学计算机期末考试题库', '计算机二级office题库', '毛概期末考试题库', '中国近代史期末考试题库', '马克思原理期末考试题库', '形式与政策'],
-    choseQB: '大学计算机期末考试题库',
+    QBList: ['区块链测试题初级', '区块链测试题中级', '区块链测试题高级'],
+    choseQB: '区块链测试题高级',
     id:0,
     ranking_list:[],
     loading: true,
@@ -199,7 +199,7 @@ Page({
       console.log(res.target)
     }
     return {
-      title: '大学考试题库',
+      title: '区块链测试题',
       path: '/pages/choiceMain/choiceMain',
       success: function (res) {
         // 转发成功

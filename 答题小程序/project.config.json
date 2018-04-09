@@ -8,8 +8,8 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.4",
-	"appid": "wxa5a941cf8158983e",
+	"libVersion": "1.9.9",
+	"appid": "wx6fe1535e2b178dfb",
 	"projectname": "%E5%8D%96%E4%BB%A3%E7%A0%81",
 	"condition": {
 		"search": {

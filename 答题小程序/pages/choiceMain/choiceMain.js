@@ -2,35 +2,23 @@ var that;
 var Bmob = require('../../utils/bmob.js');
 Page({
   data: { 
-    choseQuestionBank:"点击选择",
+    choseQuestionBank:"区块链测试题初级",
 
-    array: ['大学计算机期末考试题库', '计算机二级office题库', '毛概期末考试题库', '中国近代史期末考试题库', '马克思原理期末考试题库','形式与政策'],
+    array: ['区块链测试题初级', '区块链测试题中级', '区块链测试题高级'],
 
 
     objectArray: [
       {
         id: 0,
-        name: '大学计算机期末考试题库'
+        name: '区块链测试题初级'
       },
       {
         id: 1,
-        name: '计算机二级office题库'
+        name: '区块链测试题中级'
       },
       {
         id: 2,
-        name: '毛概期末考试题库'
-      },
-      {
-        id: 3,
-        name: '中国近代史期末考试题库'
-      },
-      {
-        id: 4,
-        name: '马克思原理期末考试题库'
-      },
-      {
-        id: 5,
-        name: '形式与政策'
+        name: '区块链测试题高级'
       }
     ],
     index: 0,
@@ -61,9 +49,6 @@ Page({
     var queryUser = new Bmob.Query(User);
     queryUser.get(currentUserId, {
       success: function (result) {
-        var register = result.get("register");
-        console.log(register)
-        if (register==true){
           var choseQuestionBank = that.data.choseQuestionBank;
           if (choseQuestionBank != "点击选择") {
             getApp().globalData.choseQuestionBank = choseQuestionBank;
@@ -79,25 +64,8 @@ Page({
               image: '../../images/warn.png',
               duration: 2000
             })
-          }
-        }
-        else{
-          wx.showModal({
-            title: '尚未完善信息',
-            content: '请放心填写，您的隐私绝不会被泄露',
-            confirmText: '立即注册',
-            confirmColor: '#1bd0bd',
-            showCancel:false,
-            success: function (res) {
-              if (res.confirm) {
-                wx.navigateTo({
-                  url: '../register/register'
-                })
-              } else if (res.cancel) {
-              }
-            }
-          })
-        }
+          }       
+       
         that.setData({
           loading: false
         })

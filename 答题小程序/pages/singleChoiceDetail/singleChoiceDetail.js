@@ -33,12 +33,7 @@ Page({
     if (choseQuestionBank =="区块链测试题初级"){
       loadQuestionBank="BCLevel1";
     }
-    else if (choseQuestionBank == "区块链测试题中级"){
-      loadQuestionBank = "QB2";
-    }
-    else if (choseQuestionBank == "区块链测试题高级") {
-      loadQuestionBank = "QB3";
-    }
+  
     var QuestionBank = Bmob.Object.extend(loadQuestionBank);
     var querySingleQuestionBank = new Bmob.Query(QuestionBank);
     querySingleQuestionBank.equalTo("type", "SC");

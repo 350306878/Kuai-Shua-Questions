@@ -1,0 +1,31 @@
+<view class="page">
+  <form bindsubmit="bindSubmit">
+    <view class="head">
+      <view class="headText">*请选择反馈类型</view>
+    </view>
+
+    <view  class="choseReason" >
+        <view class="reasonItem"  wx:for="{{reasonList}}" data-index="{{index}}" bindtap="choseReason" style="{{index==id?'background-color: #fe4c40;color:#fff':' background-color: #efefef;' }}">
+          <view  bindtap="falseInformation">{{item}}</view>
+        </view>
+      </view>
+
+
+    <view class="remark">
+        <text class="remark-title">* 具体说明:</text>
+          <textarea  name="content" class="inputRemark" bindblur="bindTextAreaBlur"  maxlength="500" placeholder="请详细描述您遇到的问题，便于我们更好的整改" />
+    </view>
+
+    <!--<text class="imageTitle">相关截图:<text style="color:#737373;font-size:30rpx;">(若无则可不上传)</text></text>
+    <view class="gallery">
+        <view class="itemImage" wx:for="{{urlArr}}" >
+            <image class="thumb" data-current="{{item}}"  style="width: {{2*image_width}}rpx; height: {{2*image_width}}rpx" src="{{item.url}}" />
+            <image class="delete" src="../../images/deleteImage.png" data-index="{{index}}" bindtap="delete"></image>
+        </view>
+        <image class="thumb" style="width: 100rpx; height: 100rpx" src="../../images/upload.png"  bindtap="upImg"/>
+    </view>
+-->
+    <button  class="submitButton"  formType="submit">提交</button>
+  </form>
+
+</view>

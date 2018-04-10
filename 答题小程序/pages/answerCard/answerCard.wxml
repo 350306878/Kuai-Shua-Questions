@@ -19,29 +19,6 @@
 
   <view style='height:20rpx;  clear: both;'></view>
 
-  <view class='title'>
-      <text style='color:#1bd0db;font-size: 50rpx;margin-right:15rpx;'>|</text>
-      <text>多项选择题</text>
-  </view> 
-
-  <!-- <view wx:if="{{noMulti==true}}">
-    <view class='multiChoice' wx:for="{{singleQuestionList}}">
-        <view class='singleChoiceItemBlank' >{{item.number}}</view>
-    </view>
-  </view> -->
-
-  <!-- <view wx:if="{{noMulti==false}}"> -->
-    <view class='multiChoice' wx:for="{{multiQuestionList}}">
-      <view class='singleChoiceItemCorrect' wx:if="{{item.answerResult=='correct'}}">{{item.number}}</view>
-      <view class='singleChoiceItemError' wx:if="{{item.answerResult=='error'}}">{{item.number}}</view>
-      <view class='singleChoiceItemBlank' wx:if="{{item.answerResult==null||item.answerResult=='blank'}}">{{item.number}}</view>
-    </view>
-  <!-- </view> -->
-
-
-
-   <view style='height:150rpx;  clear: both;'></view>
-
 
   <view class='bottom'>
     <view class='left'>

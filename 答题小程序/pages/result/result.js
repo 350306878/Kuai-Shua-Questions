@@ -150,78 +150,29 @@ Page({
         var choseQuestionBank = that.data.choseQuestionBank;
         var QBAttributes = Bmob.Object.extend("QBAttributes");
         var queryQBAttributes = new Bmob.Query(QBAttributes);
-        if (choseQuestionBank == '区块链测试题初级') {
-            queryQBAttributes.get('63dc39105a', {
-                success: function (result) {
-                    var peopleNumber = result.attributes.PeopleNumber + 1;
-                    var allScore = getApp().globalData.score + result.attributes.allScore;
-                    var averageScore = allScore / peopleNumber;
-                    var newAverageScore = averageScore.toFixed(1);
-                    var correctRate = getApp().globalData.score / 60 * 100;
-                    var newCorrectRate = correctRate.toFixed(1);
-                    result.set('PeopleNumber', peopleNumber);
-                    result.set('allScore', allScore);
-                    result.set('averageScore', averageScore);
-                    result.save();
-                    that.setData({
-                        // defeatNumber: ,
-                        averageScore: newAverageScore,
-                        correctRate: newCorrectRate
-                    });
-                },
-                error: function (object, error) {
-                    console.log("ccc")
-                }
-            });
-        }
-        else if (choseQuestionBank == '区块链测试题中级') {
-            queryQBAttributes.get('3eb8614929	', {
-                success: function (result) {
-                    var peopleNumber = result.attributes.PeopleNumber + 1;
-                    var allScore = getApp().globalData.score + result.attributes.allScore;
-                    var averageScore = allScore / peopleNumber;
-                    var newAverageScore = averageScore.toFixed(1);
-                    var correctRate = getApp().globalData.score / 60 * 100;
-                    var newCorrectRate = correctRate.toFixed(1);
-                    result.set('PeopleNumber', peopleNumber);
-                    result.set('allScore', allScore);
-                    result.set('averageScore', averageScore);
-                    result.save();
-                    that.setData({
-                        // defeatNumber: ,
-                        averageScore: newAverageScore,
-                        correctRate: newCorrectRate
-                    });
-                },
-                error: function (object, error) {
-                    console.log("ccc")
-                }
-            });
-        }
-        else if (choseQuestionBank == '区块链测试题高级') {
-            queryQBAttributes.get('137c1a0244', {
-                success: function (result) {
-                    var peopleNumber = result.attributes.PeopleNumber + 1;
-                    var allScore = getApp().globalData.score + result.attributes.allScore;
-                    var averageScore = allScore / peopleNumber;
-                    var newAverageScore = averageScore.toFixed(1);
-                    var correctRate = getApp().globalData.score / 60 * 100;
-                    var newCorrectRate = correctRate.toFixed(1);
-                    result.set('PeopleNumber', peopleNumber);
-                    result.set('allScore', allScore);
-                    result.set('averageScore', averageScore);
-                    result.save();
-                    that.setData({
-                        // defeatNumber: ,
-                        averageScore: newAverageScore,
-                        correctRate: newCorrectRate
-                    });
-                },
-                error: function (object, error) {
-                    console.log("ccc")
-                }
-            });
-        }
+
+        queryQBAttributes.get('63dc39105a', {
+            success: function (result) {
+                var peopleNumber = result.attributes.PeopleNumber + 1;
+                var allScore = getApp().globalData.score + result.attributes.allScore;
+                var averageScore = allScore / peopleNumber;
+                var newAverageScore = averageScore.toFixed(1);
+                var correctRate = getApp().globalData.score / 60 * 100;
+                var newCorrectRate = correctRate.toFixed(1);
+                result.set('PeopleNumber', peopleNumber);
+                result.set('allScore', allScore);
+                result.set('averageScore', averageScore);
+                result.save();
+                that.setData({
+                    // defeatNumber: ,
+                    averageScore: newAverageScore,
+                    correctRate: newCorrectRate
+                });
+            },
+            error: function (object, error) {
+                console.log("ccc");
+            }
+        });
     },
 
     allAnalysis: function () {
@@ -242,65 +193,24 @@ Page({
         var History = Bmob.Object.extend("history");
         var queryHistory = new Bmob.Query(History);
         var defeatNumber = 0;
-        if (choseQuestionBank == '区块链测试题初级') {
-            queryHistory.equalTo("choseQuestionBank", "区块链测试题初级");
-            queryHistory.find({
-                success: function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        var score = results[i].attributes.score;
-                        if (that.data.score > score) {
-                            defeatNumber++;
-                        }
+
+        queryHistory.equalTo("choseQuestionBank", "区块链测试题初级");
+        queryHistory.find({
+            success: function (results) {
+                for (var i = 0; i < results.length; i++) {
+                    var score = results[i].attributes.score;
+                    if (that.data.score > score) {
+                        defeatNumber++;
                     }
-                    that.setData({
-                        defeatNumber: defeatNumber,
-                        loading: false
-                    });
-                },
-                error: function (error) {
-                    console.log("查询失败: " + error.code + " " + error.message);
                 }
-            });
-        }
-        else if (choseQuestionBank == '区块链测试题中级') {
-            queryHistory.equalTo("choseQuestionBank", "区块链测试题中级");
-            queryHistory.find({
-                success: function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        var score = results[i].attributes.score;
-                        if (that.data.score > score) {
-                            defeatNumber++;
-                        }
-                    }
-                    that.setData({
-                        defeatNumber: defeatNumber,
-                        loading: false
-                    });
-                },
-                error: function (error) {
-                    console.log("查询失败: " + error.code + " " + error.message);
-                }
-            });
-        }
-        else if (choseQuestionBank == '区块链测试题高级') {
-            queryHistory.equalTo("choseQuestionBank", "区块链测试题高级");
-            queryHistory.find({
-                success: function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        var score = results[i].attributes.score;
-                        if (that.data.score > score) {
-                            defeatNumber++;
-                        }
-                    }
-                    that.setData({
-                        defeatNumber: defeatNumber,
-                        loading: false
-                    });
-                },
-                error: function (error) {
-                    console.log("查询失败: " + error.code + " " + error.message);
-                }
-            });
-        }
+                that.setData({
+                    defeatNumber: defeatNumber,
+                    loading: false
+                });
+            },
+            error: function (error) {
+                console.log("查询失败: " + error.code + " " + error.message);
+            }
+        });
     }
 })

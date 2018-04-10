@@ -15,9 +15,53 @@ Page({
         loading: true
     },
 
+<<<<<<< HEAD
     onLoad: function () {
         that = this;
         var choseQuestionBank = getApp().globalData.choseQuestionBank;
+=======
+  data: {
+    choseQuestionBank: '',
+    currentUserId: null,
+    questionList:[],
+    nowQuestion:[],
+    nowQuestionNumber:'',
+    choseCharacter:'',
+    score:0,
+    // blank:"blank",
+    newMultiQuestionList:[],
+    loading:true
+  },
+
+  
+  onLoad: function () {
+    that = this;
+    var choseQuestionBank = getApp().globalData.choseQuestionBank;
+    that.setData({
+      choseQuestionBank: choseQuestionBank
+    });
+    var currentUser = Bmob.User.current();
+    var currentUserId = currentUser.id;
+    var choseQuestionBank = that.data.choseQuestionBank;
+    var loadQuestionBank;
+    var questionList=new Array();
+    var multiQuestionList = new Array();
+    if (choseQuestionBank =="区块链测试题初级"){
+      loadQuestionBank="BCLevel1";
+    }
+  
+    var QuestionBank = Bmob.Object.extend(loadQuestionBank);
+    var querySingleQuestionBank = new Bmob.Query(QuestionBank);
+    querySingleQuestionBank.equalTo("type", "SC");
+    querySingleQuestionBank.find({
+      success: function (results) {
+        console.log("共查询到 " + results.length + " 条记录");
+        for (var i = 0; i < results.length; i++) {
+          questionList.push(results[i])
+          questionList[i].attributes.userChose = "空";
+        }
+        var newSingleQuestionList = that.getRandomSingleChoice(questionList,20)
+>>>>>>> 8cba70d9140f8682c88b2eac68acb2bfa0e8012f
         that.setData({
             choseQuestionBank: choseQuestionBank
         });

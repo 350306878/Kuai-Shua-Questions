@@ -20,7 +20,7 @@ Page({
         var currentUserId = currentUser.id;
         var getSingleQuestionList = getApp().globalData.singleChoiceAnswerNow;
         console.log(getSingleQuestionList);
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 10; i++) {
             getSingleQuestionList[i].attributes.number = i + 1;
         }
         var score = getApp().globalData.score;
@@ -30,7 +30,7 @@ Page({
         });
         console.log(getSingleQuestionList);
         var saveSingleQuestionList = new Array();
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 10; i++) {
             saveSingleQuestionList[i] = getSingleQuestionList[i].attributes;
         }
         that.deleteHistory(currentUserId, choseQuestionBank, currentUserId, score, saveSingleQuestionList)

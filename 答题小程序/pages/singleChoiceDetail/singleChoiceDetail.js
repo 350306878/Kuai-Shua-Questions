@@ -30,12 +30,7 @@ Page({
         if (choseQuestionBank == "区块链测试题初级") {
             loadQuestionBank = "BCLevel1";
         }
-        else if (choseQuestionBank == "区块链测试题中级") {
-            loadQuestionBank = "QB2";
-        }
-        else if (choseQuestionBank == "区块链测试题高级") {
-            loadQuestionBank = "QB3";
-        }
+        
         var QuestionBank = Bmob.Object.extend("BCLevel1");
         var querySingleQuestionBank = new Bmob.Query(QuestionBank);
         querySingleQuestionBank.equalTo("type", "SC");
@@ -46,7 +41,7 @@ Page({
                     questionList.push(results[i]);
                     questionList[i].attributes.userChose = "空";
                 }
-                var newSingleQuestionList = that.getRandomSingleChoice(questionList, 20);
+                var newSingleQuestionList = that.getRandomSingleChoice(questionList, 10);
                 that.setData({
                     questionList: newSingleQuestionList,
                     nowQuestion: newSingleQuestionList[0],
@@ -91,13 +86,13 @@ Page({
                 // score:score,
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -115,13 +110,13 @@ Page({
                 choseCharacter: "A",
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -150,13 +145,13 @@ Page({
                 // score: score,
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -174,14 +169,14 @@ Page({
                 choseCharacter: "B",
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -208,13 +203,13 @@ Page({
                 // score: score,
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -232,13 +227,13 @@ Page({
                 choseCharacter: "C",
             });
             that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
+                if (nowQuestionNumber == 9) {
                     that.setData({
                         nowQuestion: questionList[nowQuestionNumber],
                         nowQuestionNumber: nowQuestionNumber,
                     });
                 }
-                else if (nowQuestionNumber != 19) {
+                else if (nowQuestionNumber != 9) {
                     var nextQuestionNumber = nowQuestionNumber + 1;
                     that.setData({
                         nowQuestion: questionList[nextQuestionNumber],
@@ -250,65 +245,7 @@ Page({
         }
 
     },
-
-    choseD: function () {
-        var questionList = that.data.questionList;
-        var nowQuestionNumber = that.data.nowQuestionNumber;
-        var answer = questionList[nowQuestionNumber].attributes.answer[0];
-        if ("D" == answer) {
-            getApp().globalData.score += 5;
-            // var score = that.data.score + 1;
-            questionList[nowQuestionNumber].attributes.answerResult = "correct";
-            questionList[nowQuestionNumber].attributes.userChose = "D";
-            that.setData({
-                questionList: questionList,
-                choseCharacter: "D",
-                // score: score,
-            });
-            that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
-                    that.setData({
-                        nowQuestion: questionList[nowQuestionNumber],
-                        nowQuestionNumber: nowQuestionNumber,
-                    });
-                }
-                else if (nowQuestionNumber != 19) {
-                    var nextQuestionNumber = nowQuestionNumber + 1;
-                    that.setData({
-                        nowQuestion: questionList[nextQuestionNumber],
-                        nowQuestionNumber: nextQuestionNumber,
-                    });
-                }
-            }, 300);
-            that.overSingleChoice(nowQuestionNumber);
-        }
-        else if ("D" != answer) {
-            questionList[nowQuestionNumber].attributes.answerResult = "error";
-            questionList[nowQuestionNumber].attributes.userChose = "D";
-            that.setData({
-                questionList: questionList,
-                choseCharacter: "D",
-            });
-            that.nextQuestion = setTimeout(function () {
-                if (nowQuestionNumber == 19) {
-                    that.setData({
-                        nowQuestion: questionList[nowQuestionNumber],
-                        nowQuestionNumber: nowQuestionNumber,
-                    });
-                }
-                else if (nowQuestionNumber != 19) {
-                    var nextQuestionNumber = nowQuestionNumber + 1;
-                    that.setData({
-                        nowQuestion: questionList[nextQuestionNumber],
-                        nowQuestionNumber: nextQuestionNumber,
-                    });
-                }
-            }, 300);
-            that.overSingleChoice(nowQuestionNumber);
-        }
-
-    },
-
+    
     afterQuestion: function () {
         var nowQuestionNumber = that.data.nowQuestionNumber
         var questionList = that.data.questionList;
@@ -346,7 +283,7 @@ Page({
     overSingleChoice: function (questionNumber) {
         getApp().globalData.singleChoiceAnswerNow = that.data.questionList;
         getApp().globalData.multiChoiceAnswerNow = that.data.newMultiQuestionList;
-        if (questionNumber == 19) {
+        if (questionNumber == 9) {
             wx.redirectTo({
                 url: '../result/result'
             });

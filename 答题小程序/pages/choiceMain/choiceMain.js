@@ -14,7 +14,9 @@ Page({
   },
 
   onShow: function () {
-
+    this.setData({
+      loading: false
+    })
   },
 
   start:function(){

@@ -1,0 +1,121 @@
+page{
+     height: 100%;
+ }
+.page{
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.head{
+
+  background-color: #fff;
+}
+
+.headText{
+    font-size: 35rpx;
+  padding: 20rpx 0rpx 0rpx 20rpx;
+  color: #1bd0bd;
+}
+
+.choseReason{
+  font-size: 35rpx;
+  padding: 10rpx 0rpx 40rpx 0rpx;
+  background-color: #fff;
+  display:inline-block;
+  border-bottom: 2rpx #efefef solid;
+}
+
+.reasonItem{
+    font-size: 35rpx;
+  margin:15rpx;
+  padding: 15rpx;
+  background-color: #efefef;
+  float:left;
+  display:inline;
+  color: #7a7a7a;
+
+}
+
+.remark{
+    font-size: 35rpx;
+  margin-top: 5rpx;
+  background-color: #fff;
+   border-bottom: 2rpx #efefef solid;
+}
+
+.remark-title{
+    font-size: 35rpx;
+  display: flex;
+  color: #1bd0bd;
+  padding: 10rpx 0rpx 40rpx 20rpx;
+}
+
+.inputRemark{
+    font-size: 35rpx;
+  padding: 0rpx 20rpx 0rpx 20rpx;
+  width: 90%;
+}
+
+.imageTitle{
+    font-size: 35rpx;
+  display: flex;
+  color: #1bd0bd;
+  margin-top: 10rpx;
+  padding: 10rpx 0rpx 20rpx 20rpx;
+  background-color: #fff;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #fff;
+
+}
+
+/*每张图片所占容器*/
+.itemImage {
+    position: relative;
+}
+
+
+/*小图片*/
+.thumb {
+	margin: 10rpx;
+  position: relative;
+}
+
+/*删除按钮*/
+.delete {
+	position: absolute;
+	height: 40rpx;
+	top: 0rpx;
+  right:0;
+	width: 40rpx;
+}
+
+.delete image {
+	position: absolute;
+	width: 30rpx;
+	height: 30rpx;
+}
+
+.photo{
+ text-align: center;
+ margin: 30rpx 0rpx 20rpx 0rpx;
+}
+
+.submitButton{   
+    width:80%;
+    height:90rpx;
+    background-color:#1bd0bd;
+    border-radius:30px;
+    color:#fff;
+   margin: auto;
+   margin-top: 30rpx;
+   margin-bottom: 50rpx;
+   display:flex;
+    justify-content:center;
+    align-items:center;
+}

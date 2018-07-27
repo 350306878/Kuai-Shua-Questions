@@ -11,7 +11,7 @@
 </div>
 下图为第二个版本，增强版（微信扫码）
 <div align="center">
-<img src="https://www.bmob.cn/uploads/attached/app/logo/20180727/649b68cb-2287-8b62-990d-6ef0f4476333.jpg" height="300" width="300" >
+<img src="http://bmob-cdn-19057.b0.upaiyun.com/2018/07/27/40e2fd0b4010419b80a0c7669985541f.jpg" height="300" width="300" >
 </div>
 
 项目部分截图如下：

@@ -24,7 +24,7 @@
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/a052903340991a3080e44043c3113788.png" height="500" width="270" >
+<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/4971270d404c374980dc9bbb1edbcb9e.jpg" height="500" width="270" >
 </div>
 
 # 第二版

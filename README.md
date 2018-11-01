@@ -8,23 +8,23 @@
 该版本可以设置每道题倒计时的时间，如每道题有30秒作答时间，以及可以设置作答人员白名单，如只允许公司内部人员进行作答，还可以设置试卷的开启和结束时间，在指定时间段内作答。项目截图如下：
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/fbc973244010954980d5ba181f63fedc.jpg" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084858aijj9wm53o9p999z.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/ac335972401b01838081eabb70348c8b.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084905f966wt99jnej26o2.jpg" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/48081aa9408ccbdc802a7c7f099b7cc3.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084905ra410ft4fs5r25k2.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/a052903340991a3080e44043c3113788.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084909kj08jpnkxzfpg5jz.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/10/27/4971270d404c374980dc9bbb1edbcb9e.jpg" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084909eyh8zb4ib0z4b11c.jpg" height="500" width="270" >
 </div>
 
 # 第二版

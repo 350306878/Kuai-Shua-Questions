@@ -28,6 +28,10 @@
 <img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084909eyh8zb4ib0z4b11c.jpg" height="500" width="270" >
 </div>
 
+<div align="center">
+<img src="https://bmob-cdn-21211.bmobcloud.com/2018/12/23/a9ecd6df40f29d1680566beb5cc9172c.png" height="500" width="270" >
+</div>
+
 # 第二版
 
 一款功能强大的答题小程序，分为四大功能，答题，学习，排名和错题本，答题功能可以随机从选择的题库中抽取题目作答，学习功能可以浏览全部的题目，并具有记忆功能，下次进入会自动回到学习进度，排名功能可以对每套试卷的作答人员进行分数等排名，错题本会自动记录用户在答题中答错的题目，让用户可以复习，并且可以随时移除题目。 

@@ -29,7 +29,7 @@
 </div>
 
 <div align="center">
-<img src="https://bmob-cdn-21211.bmobcloud.com/2018/12/23/a9ecd6df40f29d1680566beb5cc9172c.png" height="500" width="320" >
+<img src="https://bmob-cdn-21211.bmobcloud.com/2018/12/23/a9ecd6df40f29d1680566beb5cc9172c.png" height="470" width="320" >
 </div>
 
 # 第二版

@@ -46,6 +46,28 @@
 
 项目部分截图如下：
 
+
+<div align="center">
+<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab71e698c1.png" height="500" width="270" >
+</div>
+新版首页面
+<div align="center">
+<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab76ba0541.png" height="500" width="270" >
+</div>
+新版答题页
+<div align="center">
+<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab76fc6c8a.png" height="500" width="270" >
+</div>
+新版答题结果页
+<div align="center">
+<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab7a0dbb61.png" height="500" width="270" >
+</div>
+新版错题本页
+<div align="center">
+<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab7d113953.png" height="500" width="270" >
+</div>
+新版学习页
+
 <div align="center">
 <img src="https://www.bmob.cn/uploads/attached/img/20171228/5a449a8b5dd7b.png" height="500" width="270" >
 </div>
@@ -71,23 +93,3 @@
 </div>
 多项选择页面
 
-<div align="center">
-<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab71e698c1.png" height="500" width="270" >
-</div>
-新版首页面
-<div align="center">
-<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab76ba0541.png" height="500" width="270" >
-</div>
-新版答题页
-<div align="center">
-<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab76fc6c8a.png" height="500" width="270" >
-</div>
-新版答题结果页
-<div align="center">
-<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab7a0dbb61.png" height="500" width="270" >
-</div>
-新版错题本页
-<div align="center">
-<img src="https://www.bmob.cn/uploads/attached/img/20180727/5b5ab7d113953.png" height="500" width="270" >
-</div>
-新版学习页

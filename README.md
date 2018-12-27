@@ -38,9 +38,7 @@
 整个小程序非常适合政府、公司和学校进行人员考核、测评等一系列以考促学的活动
 
 项目体验地址如下（微信扫码）：
-<div align="center">
-<img src="http://bmob-cdn-16714.b0.upaiyun.com/2018/02/20/0de0e53e40548dd88011730550942202.jpg" height="300" width="300" >
-</div>
+
 下图为第二个版本，增强版（微信扫码）
 <div align="center">
 <img src="http://bmob-cdn-19057.b0.upaiyun.com/2018/07/27/40e2fd0b4010419b80a0c7669985541f.jpg" height="300" width="300" >

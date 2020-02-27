@@ -9,27 +9,24 @@
 该版本可以自动识别判断单选多选，支持从数千套题目中随机抽取一定数量的题目做答，以及可以设置作答人员白名单，如只允许公司内部人员进行作答，还可以设置试卷的开启和结束时间，在指定时间段内作答。代码结构清晰，定期维护更新。项目截图如下：
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084858aijj9wm53o9p999z.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102841e9nr9orxi19ggg9a.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084905f966wt99jnej26o2.jpg" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102934kg69x4djsmxbgqjc.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084905ra410ft4fs5r25k2.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102937iqinqnarpuk9irnz.png" height="500" width="270" >
 </div>
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084909kj08jpnkxzfpg5jz.png" height="500" width="270" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102939eksttm21mzktq1eq.png" height="500" width="270" >
 </div>
 
-<div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201811/01/084909eyh8zb4ib0z4b11c.jpg" height="500" width="270" >
-</div>
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/201812/25/032253o7y7sdor7sp7rt5v.jpg" height="470" width="470" >
+<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102941wvlq8vlvvylvvryz.jpg" height="470" width="470" >
 </div>
 
 # 第二版

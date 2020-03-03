@@ -8,7 +8,7 @@
 该版本可以自动识别判断单选多选，支持从数千套题目中随机抽取一定数量的题目做答，以及可以设置作答人员白名单，如只允许公司内部人员进行作答，还可以设置试卷的开启和结束时间，在指定时间段内作答。代码结构清晰，定期维护更新。项目截图如下：
 
 <div align="center">
-<img src="http://www.wxapp-union.com/data/attachment/forum/202002/27/102841e9nr9orxi19ggg9a.png" height="500" width="270" >
+<img src="https://github.com/350306878/Kuai-Shua-Questions/blob/master/%E7%AD%94%E9%A2%98%E6%88%AA%E5%9B%BE/030d415437003d761a9aff402cbf679.jpg" height="500" width="270" >
 </div>
 
 <div align="center">
